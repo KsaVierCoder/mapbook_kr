@@ -47,7 +47,3 @@ def get_map(users_data:list)->None:
     for user in users_data:
         coordinates=get_coordinates(user['location'])
 
-        folium.Marker(
-            location=(coordinates[0],coordinates[1]),
-            popup=f"Twój znajomy  {user["name"]}, <br/> miejscowość: {user["location"]} <br/> opublikował {user["posts"]} postów").add_to(map)
-    map.save('mapa.html')
