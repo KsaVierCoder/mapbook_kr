@@ -19,7 +19,7 @@ def main():
         if choice == '2': add_user(users)
         if choice == '3': remove_user(users)
         if choice == '4': update_user(users)
-        if choice == '5': get_map(users)
+
 
 
 if __name__ == "__main__":
